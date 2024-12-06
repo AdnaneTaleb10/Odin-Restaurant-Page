@@ -9,49 +9,69 @@
 }
 
 body{
-    background-color: rgba(0, 0, 0, 0.75);
-    font-family: 'IBM Plex Sans';
-    background-position: center;
-    background-size: cover;
+    background-image: url('./assets/BackgroundImage.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
+    font-family: 'IBM Plex Sans';
     text-align: center;
+    backdrop-filter: blur(5px);
 }
 
-h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
-    margin-top: 2rem;
+header{
+    height: 18em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #000000b9;
+    backdrop-filter: blur(5px);
 }
 
-h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
-    margin-top: 2rem;
+.restaurant-head{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em; 
+    transition: transform 0.3s ease;
 }
-h3 {
+
+.restaurant-head:hover{
+    transform: translateY(-5px);
+}
+
+.restaurant-head > h3{
     font-size: 1.5rem;
     font-weight: 500;
-    color: #fff;
-    text-align: center;
-    margin-top: 2rem;
-}
-h4 {
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #fff;
-    text-align: center;
-    margin-top: 2rem;
+    color: white;
 }
 
-p {
-    font-size: 1rem;
-    font-weight: 300;
-    color: #fff;
-    text-align: center;
-    margin-top: 2rem;
+.restaurant-head > h1{
+    font-family: 'Shippori Mincho', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: white;
 }
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+
+}
+
+nav button{
+    background-color: #000000a1;
+    color: white;
+    font-size: 1.3rem;
+    height: 3em;
+    padding: 0 2em;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, border 0.1s ease;
+}
+
+nav button:hover{
+    transform: translateY(-5px);
+}
+
