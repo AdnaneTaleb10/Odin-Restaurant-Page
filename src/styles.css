@@ -19,6 +19,42 @@ body{
     backdrop-filter: blur(5px);
 }
 
+h1 {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+}
+
 header{
     height: 18em;
     display: flex;
@@ -75,3 +111,62 @@ nav button:hover{
     transform: translateY(-5px);
 }
 
+.active {
+    border-bottom: 4px solid #fff;
+    border-top: 4px solid #fff;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#main-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #000000b9;
+    width: clamp(300px, 35%, 1000px);
+}
+
+.home, .menu, .about{
+    animation: fadeIn 1s;
+}
+
+#chef{
+    width: clamp(250px, 80%, 300px);
+    height: auto;
+    margin: 2rem 0;
+}
+
+.home h4 {
+    border-bottom: 2px solid #fff;
+    font-family: 'Shippori Mincho', serif;
+    
+}
+
+.home h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+}
