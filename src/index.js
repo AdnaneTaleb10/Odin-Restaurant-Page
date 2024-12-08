@@ -2,7 +2,6 @@ import "./styles.css";
 import home from "./home";
 import menu from "./menu";
 import about from "./about";
-import footer from "./footer";
 
 
 const loadHome = document.querySelector('#home');
@@ -18,6 +17,8 @@ loadHome.addEventListener('click', () => {
 })
 
 loadMenu.addEventListener('click', () => {
+    maindiv.innerHTML = '';
+    loadHome.classList.remove('active');
     menu();
 })
 
@@ -27,4 +28,3 @@ loadAbout.addEventListener('click', () => {
 
 loadHome.classList.add('active');
 home();
-footer();
