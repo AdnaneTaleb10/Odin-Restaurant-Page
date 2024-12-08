@@ -157,6 +157,17 @@ nav button:hover{
     text-align: center;
 }
 
+#footer{
+    background-color: #000000b9;
+    color: #fff;
+    font-size: 1.2rem   ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    height: 4rem;
+}
+
 
 
 
