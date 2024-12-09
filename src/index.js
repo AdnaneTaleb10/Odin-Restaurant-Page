@@ -12,6 +12,7 @@ const maindiv = document.querySelector('#main-page');
 
 loadHome.addEventListener('click', () => {
     maindiv.innerHTML = '';
+    loadMenu.classList.remove('active');
     loadHome.classList.add('active');
     home();
 })
@@ -19,6 +20,7 @@ loadHome.addEventListener('click', () => {
 loadMenu.addEventListener('click', () => {
     maindiv.innerHTML = '';
     loadHome.classList.remove('active');
+    loadMenu.classList.add('active');
     menu();
 })
 
