@@ -131,11 +131,11 @@ nav button:hover{
     justify-content: center;
     padding: 2rem;
     background-color: #000000b9;
-    width: clamp(300px, 35%, 1000px);
+    width: clamp(300px, 40%, 1000px);
 }
 
 .home, .menu, .about{
-    animation: fadeIn 1s;
+    animation: fadeIn 1s;  /* need to figure out why the animation on the menu page doesnt work */
 }
 
 #chef{
@@ -170,6 +170,7 @@ nav button:hover{
 
 .food-card img {
     width: 50%;
+    min-width: 10em;
     border-bottom: 4px solid #fff;
     border-radius: 10px 10px 0 0;
 }
@@ -208,9 +209,6 @@ nav button:hover{
 }
 
 
-
-
-
 @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -219,4 +217,19 @@ nav button:hover{
     100% {
       opacity: 1;
     }
+}
+
+@media screen and (max-width: 1050px) {
+    .food-card {
+        flex-direction: column;
+    }
+
+    .food-text {
+        width: 100%;
+    }
+
+    .food-card img {
+        width: 70%;
+    }
+
 }
