@@ -7,7 +7,7 @@ import chirashiImg from './assets/Chirashi.jpg';
 
 export default function menu(){
     const body = document.querySelector("body");
-    body.style.maxHeight = 'fit-content';
+    body.style.height = '100%';
     const main = document.getElementById('content');
 
     const menu = [
@@ -47,11 +47,13 @@ export default function menu(){
             description: "A bowl of sushi rice topped with a colorful assortment of sashimi and garnishes."
         },
     ]
-
-    const menuContainer = document.querySelector("#main-page");
+    const menuContainer = document.querySelector('#main-page');
     menuContainer.classList.forEach(className => {
         menuContainer.classList.remove(className);
     })
+
+    void menuContainer.offsetWidth;
+
     menuContainer.classList.add('menu');
 
     menu.forEach(obj => {
