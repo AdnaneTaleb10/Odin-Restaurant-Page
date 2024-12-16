@@ -2,7 +2,7 @@ import locationImg from "./assets/Location.png"
 
 export default function about(){
     const body = document.querySelector('body');
-    body.style.minHeight = "100%";
+    body.style.height = "100%";
 
     const main = document.querySelector('#content')
     const aboutContainer = document.querySelector('#main-page');
