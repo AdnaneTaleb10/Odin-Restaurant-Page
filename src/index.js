@@ -13,14 +13,15 @@ const maindiv = document.querySelector('#main-page');
 loadHome.addEventListener('click', () => {
     maindiv.innerHTML = '';
     loadMenu.classList.remove('active');
+    loadAbout.classList.remove('active');
     loadHome.classList.add('active');
-    loadAbout.classList.add('active');
     home();
 })
 
 loadMenu.addEventListener('click', () => {
     maindiv.innerHTML = '';
     loadHome.classList.remove('active');
+    loadAbout.classList.remove('active');
     loadMenu.classList.add('active');
     menu();
 })
