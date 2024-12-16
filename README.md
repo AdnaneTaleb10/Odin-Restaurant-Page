@@ -2,7 +2,7 @@
 
 Welcome to the Restaurant Page project! This project showcases a restaurant website and was made as a way to study and practice using webpack as a bundler.
 
-👉[Live Demo](https://pmota173.github.io/Restaurant-Page/)
+👉[Live Demo](https://adnanetaleb10.github.io/Odin-Restaurant-Page/)
 
 ## Features
 
