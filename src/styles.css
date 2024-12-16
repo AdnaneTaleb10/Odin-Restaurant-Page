@@ -197,6 +197,31 @@ nav button:hover{
     font-weight: 300;
 }
 
+.about {
+    gap: 30px;
+}
+
+.about p{
+    font-size: 1rem;
+}
+
+.about h3{
+    font-family: 'Shippori Mincho', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: 2px underline #fff;
+}
+
+.about div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 95%;
+    justify-content: center;
+}
+
+
+
 #footer{
     background-color: #000000b9;
     color: #fff;
