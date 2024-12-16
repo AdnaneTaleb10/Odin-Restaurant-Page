@@ -28,9 +28,9 @@ loadMenu.addEventListener('click', () => {
 
 loadAbout.addEventListener('click', () => {
     maindiv.innerHTML = '';
-    loadAbout.classList.add('active');
     loadMenu.classList.remove('active');
     loadHome.classList.remove('active');
+    loadAbout.classList.add('active');
     about()
 })
 
