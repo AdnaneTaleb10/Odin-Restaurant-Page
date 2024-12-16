@@ -14,6 +14,7 @@ loadHome.addEventListener('click', () => {
     maindiv.innerHTML = '';
     loadMenu.classList.remove('active');
     loadHome.classList.add('active');
+    loadAbout.classList.add('active');
     home();
 })
 
@@ -25,8 +26,14 @@ loadMenu.addEventListener('click', () => {
 })
 
 loadAbout.addEventListener('click', () => {
-    about();
+    maindiv.innerHTML = '';
+    loadAbout.classList.add('active');
+    loadMenu.classList.remove('active');
+    loadHome.classList.remove('active');
+    about()
 })
 
 loadHome.classList.add('active');
+loadMenu.classList.remove('active');
+loadAbout.classList.remove('active');
 home();
